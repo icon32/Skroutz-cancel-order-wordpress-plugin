@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: Skroutz Order Canceletion
-Plugin URI: https://lithosdigital.gr
+Plugin Name: Skroutz Order Cancellation
+Plugin URI: https://bolanis.eu
 Description: This Plugin will cancel the orders within skroutz.
 Author: Dionisis Bolanis
 Author URI: https://bolanis.eu
@@ -30,7 +30,7 @@ function skroutz_order_canceletions_field( $post ) {
   function skroutz_order_get_info($order_id){
     $headers = [
       'Accept: application/vnd.skroutz+json; version=3.0',
-      'Authorization: Bearer cWeFE40cz9l4Vy5k5-W_uVJX74b7A8Knw4Odrs1vJB12szDtUa30dcGfKGmDnknl599N794qKJKZeTgAoI_oOg=='
+      'Authorization: Bearer //Your Api Key//'
     ];
     //Call Skroutz API
     $call = curl_init("https://api.skroutz.gr/merchants/cps/orders/" . $order_id);
